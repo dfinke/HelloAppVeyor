@@ -1,3 +1,5 @@
+install:
+  - docker version
 # os: WMF 5
-build_script:
-- ps: . .\dobuild.ps1
+# build_script:
+# - ps: . .\dobuild.ps1
