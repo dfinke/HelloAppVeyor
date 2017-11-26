@@ -1,9 +1,9 @@
 "Hello World $(Get-Date)"
 $PSVersionTable
 
-"Install from gallery"
+Get-PackageProvider -Name NuGet -ForceBootstrap #| Out-Null
 
-Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
+"Install from gallery"
 Install-Module ImportExcel -Force
 
 Import-Module ImportExcel
