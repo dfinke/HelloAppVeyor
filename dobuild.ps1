@@ -1,6 +1,6 @@
 "Hello World $(Get-Date)"
-
-$PSVersionTable
+"From PS: $(docker version)"
+#$PSVersionTable
 
 # Get-PackageProvider -Name NuGet -ForceBootstrap #| Out-Null
 # "Install from gallery"
