@@ -1,2 +1,6 @@
+"Hello World $(Get-Date)"
 $PSVersionTable
-1..5 | % { "Hello World" }
+
+"Install from gallery"
+
+Install-Module ImporExcel -Force
