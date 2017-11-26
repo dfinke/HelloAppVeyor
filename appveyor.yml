@@ -2,3 +2,5 @@ version: 1.0.{build}
 image: WMF 5
 build:
   verbosity: minimal
+test_script:
+  - ps: "Hello World"
