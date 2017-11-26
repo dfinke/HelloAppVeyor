@@ -8,4 +8,5 @@ Install-Module ImportExcel -Force
 
 Import-Module ImportExcel
 
-Get-Process | Select-Object Company, Handles | Export-Excel
+Get-Module -list ImportExcel
+#Get-Process | Select-Object Company, Handles | Export-Excel
