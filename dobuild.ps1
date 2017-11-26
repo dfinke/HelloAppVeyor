@@ -1,5 +1,6 @@
 "Hello World $(Get-Date)"
-"From PS: $(docker version)"
+"From PS: $(docker version | out-string )"
+
 #$PSVersionTable
 
 # Get-PackageProvider -Name NuGet -ForceBootstrap #| Out-Null
