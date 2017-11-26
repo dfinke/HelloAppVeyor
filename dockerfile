@@ -1,9 +1,9 @@
 FROM microsoft/powershell:6.0.0-rc-nanoserver-1709
-WORKDIR "Program Files"
-USER ContainerAdministrator
-RUN rd /S /Q PowerShell\Modules\PSReadLine
-USER ContainerUser
-WORKDIR /
+# WORKDIR "Program Files"
+# USER ContainerAdministrator
+# RUN rd /S /Q PowerShell\Modules\PSReadLine
+# USER ContainerUser
+# WORKDIR /
 
 # FROM debian:jessie-slim
 
