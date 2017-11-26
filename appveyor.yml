@@ -1,23 +1,27 @@
 version: 1.0.{build}
 image: Visual Studio 2017
-
-environment:
-  DOCKER_USER:
-    secure: xxxxxxx
-  DOCKER_PASS:
-    secure: yyyyyyy
 install:
-  - docker version
+  - ps: Write-Host Server version $(gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').BuildLabEx
+# version: 1.0.{build}
+# image: Visual Studio 2017
 
-build_script:
-  - docker build -t me/myfavoriteapp .
+# environment:
+#   DOCKER_USER:
+#     secure: xxxxxxx
+#   DOCKER_PASS:
+#     secure: yyyyyyy
+# install:
+#   - docker version
 
-test_script:
-  - docker run me/myfavoriteapp
+# build_script:
+#   - docker build -t me/myfavoriteapp .
 
-deploy_script:
-  - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
-  - docker push me/myfavoriteapp
+# test_script:
+#   - docker run me/myfavoriteapp
+
+# deploy_script:
+#   - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
+#   - docker push me/myfavoriteapp
 
 # image: Visual Studio 2017
 # install:
