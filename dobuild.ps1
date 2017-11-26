@@ -4,7 +4,7 @@ $PSVersionTable
 "Install from gallery"
 
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-Install-Module ImporExcel -Force
+Install-Module ImportExcel -Force
 
 Import-Module ImportExcel
 
