@@ -1,5 +1,6 @@
 "Hello World $(Get-Date)"
 
+docker build -t stuff .
 # docker build --tag dougfinke/mydockerimagex:v1.0.0 .
 
 #"From PS: $(docker version | out-string )"
