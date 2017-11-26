@@ -1,4 +1,8 @@
-FROM microsoft/powershell:6.0.0-rc-nanoserver-1709
+FROM microsoft/nanoserver:1709
+# COPY hello.txt C:
+# CMD ["cmd", "/C", "type C:\\hello.txt"]
+
+#FROM microsoft/powershell:6.0.0-rc-nanoserver-1709
 # WORKDIR "Program Files"
 # USER ContainerAdministrator
 # RUN rd /S /Q PowerShell\Modules\PSReadLine
